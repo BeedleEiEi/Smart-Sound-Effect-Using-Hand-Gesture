@@ -43,4 +43,5 @@
 **/%build
 **/debug
 **/release
+*.SmartSoundEffectUsingHandGesture.pro.user 
 
