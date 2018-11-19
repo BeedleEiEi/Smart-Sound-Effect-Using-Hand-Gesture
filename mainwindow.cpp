@@ -3,6 +3,8 @@
 
 #include "qdebug.h"
 
+#include "QMediaPlayer"
+
 
 void on_trackbar( int, void* )
 {//This function gets called whenever a
@@ -46,6 +48,8 @@ void MainWindow::on_openCamButton_clicked()
     else{
         cout << "camera is open" << endl;
         createTrackbars();
+        grenadeSound = new QMediaPlayer();
+        grenadeSound->setMedia(QUrl("qrc:/sounds/res/grenade.wav"));
         connect(timer, SIGNAL(timeout()), this, SLOT(process()));
         timer->start(20);
     }
@@ -142,18 +146,25 @@ void MainWindow::process()
 
                     }
 
-                    if(count==1)
+                    if(count==1){
                         strcpy(a,"1");
-                    else if(count==2)
+                    }
+                    else if(count==2){
                         strcpy(a,"2");
-                    else if(count==3)
+                    }
+                    else if(count==3){
                         strcpy(a,"3");
-                    else if(count==4)
+                    }
+                    else if(count==4){
                         strcpy(a,"4");
-                    else if(count==5)
+                    }
+                    else if(count==5){
                         strcpy(a,"5");
-                    else
-                        strcpy(a,"IT'S NOT 1-5!!");
+                        grenadeSound->play();
+                    }
+                    else{
+                        strcpy(a,"CAN'T DETECT");
+                    }
 
                     putText(frame,a,Point(70,70),CV_FONT_HERSHEY_SIMPLEX,3,Scalar(255,0,0),2,8,false);
                     drawContours(frameTresh, contours, i,Scalar(255,255,0),2, 8, vector<Vec4i>(), 0, Point() );

@@ -7,6 +7,8 @@
 #include <opencv2/highgui.hpp>
 #include <opencv2/imgproc.hpp>
 
+#include "QMediaPlayer"
+
 using namespace cv;
 
 #include <iostream>
@@ -37,10 +39,16 @@ private:
     Ui::MainWindow *ui;
 
     QTimer *timer;
+
     VideoCapture cap;
 
     Mat frame;
+
     QImage qt_image;
+
+    QMediaPlayer * grenadeSound;
+
+
 };
 
 #endif // MAINWINDOW_H
