@@ -48,8 +48,7 @@ void MainWindow::on_openCamButton_clicked()
     else{
         cout << "camera is open" << endl;
         createTrackbars();
-        grenadeSound = new QMediaPlayer();
-        grenadeSound->setMedia(QUrl("qrc:/sounds/res/grenade.wav"));
+        createSoundEffect();
         connect(timer, SIGNAL(timeout()), this, SLOT(process()));
         timer->start(20);
     }
@@ -206,6 +205,7 @@ void MainWindow::process()
     }
 }
 
+/////////////////////////////////////////////////////////
 void MainWindow::createTrackbars(){
     namedWindow("Trackbar",0);
     //create memory to store trackbar name on window
@@ -227,5 +227,11 @@ void MainWindow::createTrackbars(){
     createTrackbar( "S_MAX", "Trackbar", &S_MAX, S_MAX, on_trackbar );
     createTrackbar( "V_MIN", "Trackbar", &V_MIN, V_MAX, on_trackbar );
     createTrackbar( "V_MAX", "Trackbar", &V_MAX, V_MAX, on_trackbar );
+}
+
+///////////////////////////////////////////////////////////////////////////
+void MainWindow::createSoundEffect(){
+    grenadeSound = new QMediaPlayer();
+    grenadeSound->setMedia(QUrl("qrc:/sounds/res/grenade.wav"));
 }
 

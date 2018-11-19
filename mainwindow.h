@@ -35,6 +35,8 @@ private slots:
 
     void createTrackbars();
 
+    void createSoundEffect();
+
 private:
     Ui::MainWindow *ui;
 
