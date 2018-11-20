@@ -1,5 +1,6 @@
 <RCC>
     <qresource prefix="/sounds">
         <file>res/grenade.wav</file>
+        <file>res/clapping.wav</file>
     </qresource>
 </RCC>
