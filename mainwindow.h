@@ -9,6 +9,8 @@
 
 #include "QMediaPlayer"
 
+#include <QSound>
+
 using namespace cv;
 
 #include <iostream>
@@ -37,7 +39,27 @@ private slots:
 
     void createSoundEffect();
 
+    void on_setupButton_clicked();
+
+    void loadSoundConfig();
+
+    void saveSoundConfig();
+
+
+    void on_browseButton1_clicked();
+
+    void on_browseButton2_clicked();
+
+    void on_browseButton3_clicked();
+
+    void on_browseButton4_clicked();
+
+    void on_browseButton5_clicked();
+
+
+
 private:
+
     Ui::MainWindow *ui;
 
     QTimer *timer;
@@ -46,10 +68,17 @@ private:
 
     Mat frame;
 
+    Mat frameThresh;
+
     QImage qt_image;
 
-    QMediaPlayer * grenadeSound;
+    QSound * effect1;
+    QSound * effect2;
+    QSound * effect3;
+    QSound * effect4;
+    QSound * effect5;
 
+    QString fileName[5];
 
 };
 

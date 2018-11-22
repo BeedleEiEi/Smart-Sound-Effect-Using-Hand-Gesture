@@ -213,6 +213,7 @@ Makefile: ../SmartSoundEffectUsingHandGesture.pro A:/QtIde/5.7/mingw53_32/mkspec
 		A:/QtIde/5.7/mingw53_32/lib/qtmaind.prl \
 		A:/QtIde/5.7/mingw53_32/lib/Qt5Multimedia.prl \
 		A:/QtIde/5.7/mingw53_32/lib/Qt5Widgets.prl \
+		A:/QtIde/5.7/mingw53_32/lib/Qt5Multimedia.prl \
 		A:/QtIde/5.7/mingw53_32/lib/Qt5Gui.prl \
 		A:/QtIde/5.7/mingw53_32/lib/Qt5Network.prl \
 		A:/QtIde/5.7/mingw53_32/lib/Qt5Core.prl
@@ -371,6 +372,7 @@ A:/QtIde/5.7/mingw53_32/mkspecs/features/lex.prf:
 A:/QtIde/5.7/mingw53_32/lib/qtmaind.prl:
 A:/QtIde/5.7/mingw53_32/lib/Qt5Multimedia.prl:
 A:/QtIde/5.7/mingw53_32/lib/Qt5Widgets.prl:
+A:/QtIde/5.7/mingw53_32/lib/Qt5Multimedia.prl:
 A:/QtIde/5.7/mingw53_32/lib/Qt5Gui.prl:
 A:/QtIde/5.7/mingw53_32/lib/Qt5Network.prl:
 A:/QtIde/5.7/mingw53_32/lib/Qt5Core.prl:
