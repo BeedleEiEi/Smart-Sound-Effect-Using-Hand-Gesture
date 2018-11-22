@@ -186,7 +186,6 @@ Makefile: ../SmartSoundEffectUsingHandGesture.pro A:/QtIde/5.7/mingw53_32/mkspec
 		A:/QtIde/5.7/mingw53_32/mkspecs/features/win32/qt_config.prf \
 		A:/QtIde/5.7/mingw53_32/mkspecs/win32-g++/qmake.conf \
 		A:/QtIde/5.7/mingw53_32/mkspecs/features/spec_post.prf \
-		.qmake.stash \
 		A:/QtIde/5.7/mingw53_32/mkspecs/features/exclusive_builds.prf \
 		A:/QtIde/5.7/mingw53_32/mkspecs/features/toolchain.prf \
 		A:/QtIde/5.7/mingw53_32/mkspecs/features/default_pre.prf \
@@ -213,7 +212,6 @@ Makefile: ../SmartSoundEffectUsingHandGesture.pro A:/QtIde/5.7/mingw53_32/mkspec
 		A:/QtIde/5.7/mingw53_32/lib/qtmaind.prl \
 		A:/QtIde/5.7/mingw53_32/lib/Qt5Multimedia.prl \
 		A:/QtIde/5.7/mingw53_32/lib/Qt5Widgets.prl \
-		A:/QtIde/5.7/mingw53_32/lib/Qt5Multimedia.prl \
 		A:/QtIde/5.7/mingw53_32/lib/Qt5Gui.prl \
 		A:/QtIde/5.7/mingw53_32/lib/Qt5Network.prl \
 		A:/QtIde/5.7/mingw53_32/lib/Qt5Core.prl
@@ -345,7 +343,6 @@ A:/QtIde/5.7/mingw53_32/mkspecs/features/qt_config.prf:
 A:/QtIde/5.7/mingw53_32/mkspecs/features/win32/qt_config.prf:
 A:/QtIde/5.7/mingw53_32/mkspecs/win32-g++/qmake.conf:
 A:/QtIde/5.7/mingw53_32/mkspecs/features/spec_post.prf:
-.qmake.stash:
 A:/QtIde/5.7/mingw53_32/mkspecs/features/exclusive_builds.prf:
 A:/QtIde/5.7/mingw53_32/mkspecs/features/toolchain.prf:
 A:/QtIde/5.7/mingw53_32/mkspecs/features/default_pre.prf:
@@ -372,7 +369,6 @@ A:/QtIde/5.7/mingw53_32/mkspecs/features/lex.prf:
 A:/QtIde/5.7/mingw53_32/lib/qtmaind.prl:
 A:/QtIde/5.7/mingw53_32/lib/Qt5Multimedia.prl:
 A:/QtIde/5.7/mingw53_32/lib/Qt5Widgets.prl:
-A:/QtIde/5.7/mingw53_32/lib/Qt5Multimedia.prl:
 A:/QtIde/5.7/mingw53_32/lib/Qt5Gui.prl:
 A:/QtIde/5.7/mingw53_32/lib/Qt5Network.prl:
 A:/QtIde/5.7/mingw53_32/lib/Qt5Core.prl:
